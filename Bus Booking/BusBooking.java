@@ -115,6 +115,7 @@ public class BusBooking
 		boolean booking_succesfull= false;
 		while(!booking_succesfull)
 		{
+			bus.showAvailableSeats();
 			System.out.print("Enter number of Seats : ");
 			int number_of_seats = scanner.nextInt();
 			List<Integer> booking_seat_ids = new ArrayList<Integer>();
@@ -131,7 +132,6 @@ public class BusBooking
 			else
 			{
 				System.out.println("*******Seats Not Available / Invalid Given ********");
-				bus.showAvailableSeats();
 			}
 		}
 	}

@@ -38,7 +38,7 @@ class Bus
 	int getAvailableSeatsCount()
 	{
 		int available_seats_count = 0;
-		for(Seat seat: seats)
+		for(Seat seat: this.seats)
 		{
 			if (seat.availability == AVAILABLE )
 				available_seats_count+=1;
